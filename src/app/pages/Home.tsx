@@ -5,12 +5,10 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
 import { MdArrowOutward } from "react-icons/md";
-import { Button } from "@/components/ui/button";
-import Highlights from "../_components/Highlights";
 
 const Home = () => {
   return (
-    <div className="mx-5 md:mx-11   rounded-2xl   overflow-hidden  ">
+    <div className="mx-5 md:mx-11  bg-white rounded-2xl   overflow-hidden  ">
       <Swiper
         rewind={true}
         navigation={true}
@@ -19,12 +17,16 @@ const Home = () => {
       >
         <SwiperSlide className="select-none overflow-hidden w-full h-[70%]">
           <div className="flex flex-col relative h-auto md:h-[500px] lg:h-[600px] rounded-2xl rounded-r-[0px]  overflow-hidden md:bg-[#C1DBD7]  justify-end">
-            <img
+            <Image
+              height={1000}
+              width={1000}
               className="scale-[1] hidden md:block h-full w-full rounded-2xl object-cover "
               alt="Hero Image"
               src={"/Slider-image-girl.webp"}
             />
-            <img
+            <Image
+              height={1000}
+              width={1000}
               className="scale-[1]  md:hidden h-full w-full object-cover "
               alt="Hero Image"
               src={"/Slider-image-girl-mobile.webp"}
@@ -37,7 +39,7 @@ const Home = () => {
                 Stay Ahead of <br /> The Trends
               </h1>
               <h1 className="text-start fade-in-up">
-                Tell your brand's story through images
+                Tell your brand&apos;s story through images
               </h1>
 
               <button className="text-xl fade-in-up hover:-translate-y-1 transition-transformn cursor-pointer duration-150 flex justify-center items-center gap-2 text-white bg-[#121212] p-2 rounded-sm">
@@ -49,12 +51,16 @@ const Home = () => {
         </SwiperSlide>
         <SwiperSlide className="select-none overflow-hidden w-full h-[70%]">
           <div className="flex flex-col relative h-auto md:h-[500px] lg:h-[600px] rounded-2xl rounded-l-[0px] overflow-hidden md:bg-[#C7D7F1]  justify-end">
-            <img
+            <Image
+              height={1000}
+              width={1000}
               className="scale-[1] hidden md:block h-full w-full rounded-2xl object-cover "
               alt="Hero Image"
               src={"/Slider-image-boy.webp"}
             />
-            <img
+            <Image
+              height={1000}
+              width={1000}
               className="scale-[1]  md:hidden h-full w-full object-cover "
               alt="Hero Image"
               src={"/Slider-image-boy-mobile.webp"}
@@ -67,7 +73,7 @@ const Home = () => {
                 Stay Ahead of <br /> The Trends
               </h1>
               <h1 className="text-start fade-in-up">
-                Tell your brand's story through images
+                Tell your brand&apos;s story through images
               </h1>
 
               <button className="text-xl fade-in-up hover:-translate-y-1 transition-transformn cursor-pointer duration-150 flex justify-center items-center gap-2 text-white bg-[#121212] p-2 rounded-sm">

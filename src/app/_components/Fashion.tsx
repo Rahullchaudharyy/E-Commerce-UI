@@ -30,7 +30,10 @@ function Fashon() {
           alt="Logo"
         />
         <div className="h-full col-span-1 row-span-1">
-          <img
+          <Image
+            // fill
+            width={800}
+            height={800}
             src={"/PeopleIngroup.webp"}
             alt="People-Group-Image"
             className="h-full w-full object-cover"

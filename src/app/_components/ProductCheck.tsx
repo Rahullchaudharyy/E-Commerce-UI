@@ -6,28 +6,36 @@ function ProductCheck() {
   return (
     <div className="h-auto md:h-screen flex flex-col gap-3  md:flex-row p-4">
       <div className="h-full w-full">
-        <img
+        <Image
+          width={1000}
+          height={1000}
           src={`/Cloth-2.webp`}
           className="h-[60%] md:h-[80%] object-cover w-full"
           alt="Cloth"
         />
         <div className="flex gap-2 mt-3.5">
           <div className="h-[12rem] w-[12rem] md:h-32 md:w-32 border flex justify-center items-center">
-            <img
+            <Image
+              width={1000}
+              height={1000}
               src={`/Cloth-2.webp`}
               className="h-full object-cover w-[80%]"
               alt="Cloth"
             />
           </div>
           <div className="h-[12rem] w-[12rem] md:h-32 md:w-32 border flex justify-center items-center">
-            <img
+            <Image
+              width={1000}
+              height={1000}
               src={`/Cloths.webp`}
               className="h-full object-cover w-[80%]"
               alt="Cloth"
             />
           </div>
           <div className="h-[12rem] w-[12rem] md:h-32 md:w-32 border flex justify-center items-center">
-            <img
+            <Image
+              width={1000}
+              height={1000}
               src={`/Cloth-2.webp`}
               className="h-full object-cover w-[80%]"
               alt="Cloth"

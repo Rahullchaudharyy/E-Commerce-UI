@@ -13,9 +13,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-const SHEET_SIDES = ["top", "right", "bottom", "left"] as const;
+// const SHEET_SIDES = ["top", "right", "bottom", "left"] as const;
 
-type SideBar = (typeof SHEET_SIDES)[number];
+// type SideBar = (typeof SHEET_SIDES)[number];
 
 export function SideBar() {
   return (
@@ -28,7 +28,8 @@ export function SideBar() {
           <SheetHeader>
             <SheetTitle>Edit profile</SheetTitle>
             <SheetDescription>
-              Make changes to your profile here. Click save when you're done.
+              Make changes to your profile here. Click save when you&apos;re
+              done.
             </SheetDescription>
           </SheetHeader>
           <div className="grid gap-4 py-4">

@@ -1,6 +1,3 @@
-import { BiPhoneCall } from "react-icons/bi";
-import { TbPhoneCall } from "react-icons/tb";
-import { CiMail } from "react-icons/ci";
 import {
   Select,
   SelectContent,
@@ -8,12 +5,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { currencies, languages } from "./Data";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 import { GrPinterest } from "react-icons/gr";
+import { TbPhoneCall } from "react-icons/tb";
+import { currencies, languages } from "./Data";
 
 function TopNavbar() {
   return (

@@ -8,7 +8,6 @@ import Reviews from "./_components/Reviews";
 import ShopeLook from "./_components/ShopeLook";
 import SocialMedia from "./_components/SocialMedia";
 import VideoPlayer from "./_components/VideoPlayer";
-import CallToAction from "./pages/CallToAction";
 import HomePage from "./pages/Home";
 import Products from "./pages/Products";
 function Home() {

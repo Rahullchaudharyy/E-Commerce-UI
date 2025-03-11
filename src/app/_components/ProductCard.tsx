@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { FaRegStar } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa6";
 
@@ -21,24 +22,24 @@ function ProductCard({
     <div className="group  max-w-full flex   md:h-auto flex-col items-center">
       {/* Image Container */}
       <div className="w-full bg-[#F6F6F6] flex p-7 md:p-0  justify-center items-center h-auto sm:h-80 rounded-2xl overflow-hidden relative">
-        <img
+        <Image
           alt="Cloth-Image-1"
           className={`object-cover  ${
             img2 && "group-hover:hidden"
           } transition-all fade-in-50 animate-in object-center`}
           height={250}
           width={250}
-          src={img1 == "" ? undefined : img1}
+          src={img1 ? img1 : "/path/to/fallback-image.jpg"}
         />
 
-        <img
+        <Image
           alt="Cloth-Image-2"
           className={`object-cover hidden ${
             img2 && "group-hover:block"
           }  object-center`}
           height={250}
           width={250}
-          src={img2 == "" ? undefined : img2}
+          src={img2 ? img2 : "/path/to/fallback-image.jpg"}
         />
 
         <div className="absolute translate-y-20 transition-transform group-hover:translate-y-0 bottom-0 mb-3.5 flex justify-center items-center gap-2">

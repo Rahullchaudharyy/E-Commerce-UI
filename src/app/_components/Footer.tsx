@@ -1,17 +1,15 @@
-import Image from "next/image";
-import React from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 function Footer() {
   return (
     <>
-      <div className="hidden md:flex w-full bg-[#E6F1F2]  justify-between gap-8 md:gap-11 p-12">
+      <div className="hidden md:flex w-full bg-[#E6F1F2]  justify-between gap-8 md:gap-11 p-16">
         <ul className="flex flex-col gap-4">
           <h1 className="font-bold text-black">Contact Info</h1>
           <li className="text-[#47494A] font-semibold">

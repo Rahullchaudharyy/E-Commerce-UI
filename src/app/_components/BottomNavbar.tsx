@@ -1,26 +1,20 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import { CiSearch } from "react-icons/ci";
-import { PiHeartLight } from "react-icons/pi";
-import { PiHandbagSimpleThin } from "react-icons/pi";
+import { useEffect, useState } from "react";
+import { CiMenuBurger, CiSearch } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { CiMenuBurger } from "react-icons/ci";
-import { Button } from "@/components/ui/button";
+import { PiHandbagSimpleThin, PiHeartLight } from "react-icons/pi";
 
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
   SheetFooter,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
 type Categories = {
-  [key: string]: string[]; // Each key is a string, and its value is an array of strings
+  [key: string]: string[];
 };
 
 const categories: Categories = {
@@ -119,9 +113,9 @@ function BottomNavbar() {
                   </h2>
                   {FirstLevelNested === "Shope" && (
                     <>
-                      {Object.keys(categories).map((category) => (
+                      {Object.keys(categories).map((category, index) => (
                         <div
-                          key={category}
+                          key={index}
                           className="transition-all overflow-hidden animate-slide-Side flex flex-col"
                         >
                           <h2 className="p-2 pl-5 border border-t-0 flex justify-between">
@@ -170,9 +164,9 @@ function BottomNavbar() {
                           "Privacy Policy",
                           "Terms of Service",
                           "Customer Support",
-                        ].map((page) => (
+                        ].map((page, index) => (
                           <h1
-                            key={page}
+                            key={index}
                             className="p-2 pl-5 border border-t-0 flex justify-between"
                           >
                             {page}
@@ -279,8 +273,10 @@ function BottomNavbar() {
                   "Privacy Policy",
                   "Terms of Service",
                   "Customer Support",
-                ].map((data) => (
-                  <h2 className="text-sm">{data}</h2>
+                ].map((data, index) => (
+                  <h2 key={index} className="text-sm">
+                    {data}
+                  </h2>
                 ))}
               </div>
             </li>

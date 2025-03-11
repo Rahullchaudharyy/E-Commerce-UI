@@ -1,5 +1,4 @@
 "use client";
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -8,8 +7,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper/modules";
 import Image from "next/image";
+import { Navigation } from "swiper/modules";
 
 export default function Reviews() {
   return (
@@ -27,9 +26,9 @@ export default function Reviews() {
               />
               <h2>Smart Home Assistant</h2>
               <h3>
-                "Fringilla nec adipiscing eu purus pellentesque adipiscing neque
-                odio ac tincidunt. Diam platea felis leo nunc. Pharetra
-                fermentum neque. lorem text more"
+                &quot;Fringilla nec adipiscing eu purus pellentesque adipiscing
+                neque odio ac tincidunt. Diam platea felis leo nunc. Pharetra
+                fermentum neque. lorem text more&quot;
               </h3>
               <h3 className="font-bold">Emily T.</h3>
               <h4 className="">Sydney, Australia</h4>
@@ -44,9 +43,9 @@ export default function Reviews() {
               />
               <h2>Smart Home Assistant</h2>
               <h3>
-                "Fringilla nec adipiscing eu purus pellentesque adipiscing neque
-                odio ac tincidunt. Diam platea felis leo nunc. Pharetra
-                fermentum neque. lorem text more"
+                &quot;Fringilla nec adipiscing eu purus pellentesque adipiscing
+                neque odio ac tincidunt. Diam platea felis leo nunc. Pharetra
+                fermentum neque. lorem text more&quot;
               </h3>
               <h3>Emily T.</h3>
               <h4>Sydney, Australia</h4>
@@ -65,9 +64,9 @@ export default function Reviews() {
               />
               <h2>Smart Home Assistant</h2>
               <h3>
-                "Fringilla nec adipiscing eu purus pellentesque adipiscing neque
-                odio ac tincidunt. Diam platea felis leo nunc. Pharetra
-                fermentum neque. lorem text more"
+                &quot;Fringilla nec adipiscing eu purus pellentesque adipiscing
+                neque odio ac tincidunt. Diam platea felis leo nunc. Pharetra
+                fermentum neque. lorem text more&quot;
               </h3>
               <h3 className="font-bold">Emily T.</h3>
               <h4 className="">Sydney, Australia</h4>
@@ -82,9 +81,9 @@ export default function Reviews() {
               />
               <h2>Smart Home Assistant</h2>
               <h3>
-                "Fringilla nec adipiscing eu purus pellentesque adipiscing neque
-                odio ac tincidunt. Diam platea felis leo nunc. Pharetra
-                fermentum neque. lorem text more"
+                &quot;Fringilla nec adipiscing eu purus pellentesque adipiscing
+                neque odio ac tincidunt. Diam platea felis leo nunc. Pharetra
+                fermentum neque. lorem text more&quot;
               </h3>
               <h3>Emily T.</h3>
               <h4>Sydney, Australia</h4>
